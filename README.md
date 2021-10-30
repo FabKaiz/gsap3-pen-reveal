@@ -1,6 +1,5 @@
 # Pen reveal animation using GSAP 3 and ScrollTrigger
 ScrollTrigger animation using javascript, GSAP and ScrollTriger by GreenSock.  
-When you change slide it change the color of the page and animate the content and the navigation dot.
 
 ## Result : Not ready yet.
 
