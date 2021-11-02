@@ -162,6 +162,7 @@ h1 {
 @media only screen and (min-width: 768px) {
     .parts p, .parts h3 {
         font-size: 18px;
+        visibility: hidden;
     }
     h1 {
         font-size: 65px;

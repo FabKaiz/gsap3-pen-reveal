@@ -1,6 +1,11 @@
 function init(){
-    
-    // start here
+
+  // Move the part 3 to cover the part 2
+  gsap.set('.part3', {
+    y: () => {
+      return -(document.querySelector('.pen-top').clientHeight - 22);
+    }
+  })
 
 }
 
