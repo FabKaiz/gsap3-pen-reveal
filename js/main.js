@@ -5,7 +5,7 @@ function getTopPartsHeight() {
 }
 
 function init(){
-  
+
   // Move the part 3 to cover the part 2
   gsap.set('.part3', {
     y: () => {
@@ -21,9 +21,30 @@ function init(){
     }
   });
 
+  // Add class to all parts to reveal the text
+  const allParts = gsap.utils.toArray('.part');
+
+  allParts.forEach((part, index) => {
+
+    let startPosition = 'top center';
+
+    if (index === 2) {
+      startPosition = `top+=${getTopPartsHeight()} center`;
+    }
+
+    gsap.set(part, {
+      scrollTrigger: {
+        id: `${part.getAttribute('class')}`,
+        trigger: part,
+        start: startPosition,
+        toggleClass: 'fade-in',
+      }
+    })
+  })
+
   const partTopOffset = [547, 722, 842];
 
-  function fixPart(el, offset, index) {
+  const fixPart = (el, offset, index) => {
 
     gsap.set(el, {y: -offset});
 
@@ -33,7 +54,6 @@ function init(){
       start: 'top bottom-=640px',
       end: `+=${offset}`,
       scrub: true,
-      markers: true,
     }});
 
   }
@@ -43,8 +63,6 @@ function init(){
     fixPart(part, partTopOffset[index], index);
 
   })
-
-
 }
 window.addEventListener('load', function(){
     init();
