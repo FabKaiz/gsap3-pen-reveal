@@ -90,6 +90,11 @@ h1 {
 }
 
 /* this is the pen body */
+.part3 {
+  z-index: 2;
+  position: relative;
+}
+
 .part3 .image {
     background: url('../img/img_pen-body.png') no-repeat 50% 0;
     background-size: 90px auto;
@@ -103,6 +108,10 @@ h1 {
 .part5 .image {
     background-position: 50% -1156px;
     min-height: 150px;
+}
+.part5 {
+  z-index: 1;
+  position: relative;
 }
 .part6 .image {
     background-position: 50% -1439px;
