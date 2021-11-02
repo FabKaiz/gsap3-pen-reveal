@@ -1,7 +1,7 @@
 # Pen reveal animation using GSAP 3 and ScrollTrigger
 ScrollTrigger animation using javascript, GSAP and ScrollTriger by GreenSock.  
 
-## Result : Not ready yet.
+## Result : https://fabkaiz.github.io/gsap3-pen-reveal/
 
 ### Thank's to Petr Tichy
 
