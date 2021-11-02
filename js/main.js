@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 function init(){
 
   // Move the part 3 to cover the part 2
